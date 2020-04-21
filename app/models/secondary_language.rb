@@ -1,0 +1,2 @@
+class SecondaryLanguage < ApplicationRecord
+end
