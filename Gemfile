@@ -56,3 +56,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Adding Gems
 gem 'google-cloud-translate', '~> 2.3'
+gem 'google-cloud-storage'
