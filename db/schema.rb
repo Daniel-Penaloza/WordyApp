@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_21_024154) do
+ActiveRecord::Schema.define(version: 2020_04_23_032107) do
 
   create_table "secondary_languages", force: :cascade do |t|
     t.string "word"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_04_21_024154) do
     t.string "string"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "main_word"
   end
 
 end
