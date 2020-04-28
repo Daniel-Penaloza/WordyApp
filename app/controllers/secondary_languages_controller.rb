@@ -2,16 +2,14 @@ class SecondaryLanguagesController < ApplicationController
     def main
         @words = SecondaryLanguage.all
         @word = SecondaryLanguage.new
-        puts "The word is #{@word.inspect}"
     end
 
     def create
-        puts "The params are #{params}"
         @word = SecondaryLanguage.create(secondary_language_params)
+        @word.turn_to_language
         #TODO: Add the current user.
         respond_to do |format|
             if @word.save
-                puts "-------------------> #{@word.inspect}"
                 format.html {redirect_to @word, notice: "Word added"}
                 format.js
                 format.json { render json: @word, status: :created, location: @word }
