@@ -22,5 +22,8 @@ module WordyList
         ENV[key.to_s] = value
       end if File.exists?(env_file)
     end
+
+    config.i18n.available_locales = [:es, :en]
+    config.i18n.default_locale = :es
   end
 end

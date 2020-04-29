@@ -1,17 +1,10 @@
-<b>WORDS</b>
-
-<ul id="words">
-    <!-- Call a partial _secondary_language -->
-    <%= render @words %>
-</ul>
-
 <%= form_with(model: @word) do |f| %>
     <%= f.label :main_word %><br>
     <%= f.text_field :main_word %>
     <%= f.submit %>
 <% end %>
 
-
-
-
-<%#= translate_word("Therefore")%>
+<ul id="words">
+    <!-- Call a partial _secondary_language -->
+    <%= render @words %>
+</ul>
