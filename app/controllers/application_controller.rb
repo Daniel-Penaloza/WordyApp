@@ -5,8 +5,7 @@ class ApplicationController < ActionController::Base
 
     private 
     def set_locale
-        I18n.locale = #params[:locale] || I18n.default_locale
-        puts "#{I18n.locale} o mai gad"
+        I18n.locale = params[:locale] || I18n.default_locale
         # current_user.locale
         # request.env["HTTP_ACCEPT_LANGUAGE"]
     end

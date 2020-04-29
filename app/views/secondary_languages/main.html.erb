@@ -1,10 +1,9 @@
-<%= form_with(model: @word) do |f| %>
-    <%= f.label :main_word %><br>
-    <%= f.text_field :main_word %>
+<%= form_with(model: @word, id: "word_creator") do |f| %>
+    <%= f.text_field :main_word, placeholder: true %>
     <%= f.submit %>
 <% end %>
 
 <ul id="words">
     <!-- Call a partial _secondary_language -->
-    <%= render @words %>
+    <%#= render @words %>
 </ul>

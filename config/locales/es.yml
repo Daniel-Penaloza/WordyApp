@@ -34,3 +34,6 @@ es:
     attributes:
       secondary_language:
         main_word: "Traduce Tu Palabra"
+  helpers:
+    submit:
+        create: "Agrega Tu Palabra"

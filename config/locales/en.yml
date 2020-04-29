@@ -34,3 +34,6 @@ en:
     attributes:
       secondary_language:
         main_word: "Translate Your Word"
+  helpers:
+    submit:
+      create: "Add Your Word"
