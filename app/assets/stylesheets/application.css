@@ -15,5 +15,21 @@
  */
 
  body {
-     background-color: #EBECE2;
+     background-color: #fafafa;
  }
+
+ #word_creator {
+    margin: 0 auto; 
+    width:40%;
+}
+
+#secondary_language_main_word {
+    width: 100%;
+    padding: 7px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border:solid 1px #ccc;
+    border-radius: 5px;
+}
+
