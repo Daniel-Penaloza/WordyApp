@@ -1,24 +1,10 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# TODOLIST
+* Clean the input every time that a word is added to the wordylist.
+* Fix the problem with the word positioning.
+* Add the funcionality of categories for the words.
+* Install RSPEC for testing.
+* Add User funcionality without devise.
+* Add validations.
+* Add a search bar in the td element of the table.
+* Apply Fixed position on the word div.
+* Search some options for everyword (IE: example of a sentence, example of audio).
