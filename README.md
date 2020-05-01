@@ -1,4 +1,5 @@
 # TODOLIST
+* Activate the button if the value of input is greather than 0
 * Clean the input every time that a word is added to the wordylist.
 * Fix the problem with the word positioning.
 * Add the funcionality of categories for the words.

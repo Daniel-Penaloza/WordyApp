@@ -1,8 +1,8 @@
 <!-- TODO: Change to I18n-->
 <h2 id="h2">Your WordyList !!</h2>
-<%= form_with(model: @word, id: "word_creator") do |f| %>
+<%= form_with(model: @word, id: "word_creator", html: { autocomplete: "off" } ) do |f| %>
     <%= f.text_field :main_word, placeholder: true %>
-    <%= f.submit 'Add Your Word', class: 'submit_button' %>
+    <%= f.submit 'Add Your Word', class: 'submit_button'%>
 <% end %>
 
 <div id="words">
