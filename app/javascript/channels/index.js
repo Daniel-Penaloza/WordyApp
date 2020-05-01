@@ -28,4 +28,5 @@ $( document ).ready(function() {
         $(".submit_button").attr("disabled", true);
         $(".submit_button").addClass("blocked_button");
    });
+   
 });
