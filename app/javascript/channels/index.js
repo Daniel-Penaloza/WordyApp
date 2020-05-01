@@ -22,4 +22,10 @@ $( document ).ready(function() {
             $(".submit_button").addClass("blocked_button");
         }
     });
+
+   $("#word_creator").bind("ajax:complete", function(event, xhr, status) {
+        $("#secondary_language_main_word").val('');
+        $(".submit_button").attr("disabled", true);
+        $(".submit_button").addClass("blocked_button");
+   });
 });
