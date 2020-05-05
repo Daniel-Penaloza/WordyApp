@@ -1,12 +1,13 @@
 class SecondaryLanguagesController < ApplicationController
     def main
-        @words = SecondaryLanguage.all
+        @words = SecondaryLanguage.order("created_at DESC")
         @word = SecondaryLanguage.new
     end
 
     def create
         @word = SecondaryLanguage.create(secondary_language_params)
         @word.turn_to_language
+        @word.category_id = 1
         #TODO: Add the current user.
         respond_to do |format|
             if @word.save
