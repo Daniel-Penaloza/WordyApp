@@ -1,7 +1,8 @@
 class SecondaryLanguagesController < ApplicationController
     def main
-        @words = SecondaryLanguage.order("created_at DESC")
+        @words = SecondaryLanguage.all
         @word = SecondaryLanguage.new
+        @search_word = SecondaryLanguage.search(params[:search])
     end
 
     def create
@@ -24,6 +25,6 @@ class SecondaryLanguagesController < ApplicationController
 
     private
         def secondary_language_params
-            params.require(:secondary_language).permit(:word, :sentence, :created_by, :main_word)
+            params.require(:secondary_language).permit(:word, :sentence, :created_by, :main_word, :search)
         end
 end
