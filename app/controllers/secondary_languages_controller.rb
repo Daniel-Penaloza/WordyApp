@@ -21,8 +21,7 @@ class SecondaryLanguagesController < ApplicationController
             end
         end
     end
-
-
+    
     private
         def secondary_language_params
             params.require(:secondary_language).permit(:word, :sentence, :created_by, :main_word, :search)

@@ -8,8 +8,8 @@ class SecondaryLanguage < ApplicationRecord
 
     def self.search(search)
         if search
-            word = SecondaryLanguage.find(main_word: search)
-            if word
+            word = SecondaryLanguage.where("main_word like ?", "#{search}")
+            if !word.nil? 
                 self.where(id: word)
             else
                 @words = SecondaryLanguage.all
