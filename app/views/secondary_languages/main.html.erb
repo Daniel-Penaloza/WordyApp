@@ -10,6 +10,7 @@
         <tr>
             <th>Palabra Principal</th>
             <th>Traducción</th>
+            <th>Mi Ejemplo</th>
                 <%= form_with url: wordylist_path, method: :get do |f| %>
                     <%= text_field_tag :search, params[:search] %>
                     <%= submit_tag("Buscar", name: nil)%>
