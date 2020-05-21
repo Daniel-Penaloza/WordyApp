@@ -29,4 +29,13 @@ $( document ).ready(function() {
         $(".submit_button").addClass("blocked_button");
    });
    
+   $(function(){
+    // Plain jquery
+    $('#fadeMe').fadeOut(5000);
+
+    // jquery-ui
+    const availableCities = ['Baltimore', 'New York'];
+    $('#calendarField').datepicker( { dateFormat: 'yy-mm-dd' } );
+    })
+
 });
