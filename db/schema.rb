@@ -10,10 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_05_020851) do
+ActiveRecord::Schema.define(version: 2020_05_21_035500) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
+  end
+
+  create_table "examples", force: :cascade do |t|
+    t.string "content"
   end
 
   create_table "secondary_languages", force: :cascade do |t|
@@ -25,6 +29,7 @@ ActiveRecord::Schema.define(version: 2020_05_05_020851) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "main_word"
     t.integer "category_id"
+    t.integer "example_id"
   end
 
 end
