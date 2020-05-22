@@ -34,7 +34,6 @@ $( document ).ready(function() {
     $('#fadeMe').fadeOut(5000);
 
     // jquery-ui
-    const availableCities = ['Baltimore', 'New York'];
     $('#calendarField').datepicker( { dateFormat: 'yy-mm-dd' } );
     })
 
